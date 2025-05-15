@@ -124,4 +124,13 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         animateCurve();
     }
+
+    document.querySelectorAll('[data-tooltip]').forEach(item => {
+        item.addEventListener('mouseenter', () => {
+            item.setAttribute('data-show', '');
+        });
+        item.addEventListener('mouseleave', () => {
+            item.removeAttribute('data-show');
+        });
+    });
 });

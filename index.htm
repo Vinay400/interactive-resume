@@ -12,7 +12,7 @@
                 <nav class="navbar">
                     <div class="navbar-logo">Vinay Guleria</div>
                     <ul class="navbar-links">
-                        <li><a class="anchor-button" onclick="">Contact</a></li>
+                        <li><a class="anchor-button" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'});">Contact</a></li>
                         <li><a class="anchor-button" onclick="document.getElementById('education').scrollIntoView({behavior: 'smooth'});">Education</a></li>
                         <li><a class="anchor-button" onclick="document.getElementById('projects').scrollIntoView({behavior: 'smooth'});">Projects</a></li>
                     </ul>
@@ -24,6 +24,7 @@
         </path>
     </svg>
 </div>
+                <div class="animation-space"></div>
                 <div class="image-section">
                     <img id="profilepic" src="./public/images/profilepic2.jpg" alt="Profile Picture">
                 </div>
@@ -88,9 +89,11 @@
                         <a href="https://e-mart-kappa.vercel.app/"><span class="project-name">E-Mart</span></a><br>
                         <span class="project-time">Feb 2025 - Present</span><br>
                         <span class="project-desc">E-Mart is a full-stack e-commerce platform built with React, TypeScript, and Firebase. It provides a seamless shopping experience for customers while offering robust management tools for vendors and administrators.</span>
-                             <span class="project-skills"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
-                    <image xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAspJREFUWEftllmoTmEUhp9DkTKVUBQpbgwR4YqMd2ZCohAlZbowZR4SIVPJhVyZjszcGTKkyFiIJHc6dZBjSCjDek/rr6+///+/b592nZR9uffaa73fu971rq+KRn6qGrk+/wH8kwx0ABYBY4AerqFXwGXgAPAui66yMjAFOAK0KlPkMzAHOJsKIgsAFT8F9cI9D+w1Fh54oYHAUmA88BtQ7LkUEKkARPtrP/kKYGeZ5CuB7cAnoDvwPgYiFcAWYK2ffGIk6UVgLLAZ2JAXgCdGaV9gGHAzknQ4cN3a8RjonxeAL0BLb8HXSFIJVGLUP63zAvDRRNc2EYCKSgMC0SYvAA+dTtF7I5J0BHANeAQMyAvAGmArcAGYEEl6yU1qk8VtzAtAR+C5OV07YBWwo0zi1cA284Q6H8MPeQFQHpnMGaCpUatT7gHue4FB1vdlfnIZ0SRnK1Y/8zpW4tPuhqWS6+SzU4srQaoRKXayTcFuoGtRZY1buIyKaf/j8SVrpQBo4r6vDahHlnwQuAW8ATSi4TPdjajWXxYDkK1rUk6mMrAPWBxUUBu0aAYDsmWJsvCo+HEXrKZmPjDSP14FDrul9zLWZghEjAHRrp7/9MTqr0zmKLDABTnORak6Op08oHdEfc8cWG0lAM29t12AhcAhp22qJ/9l9rzLZ/17UHCax/3w0x7zbzMNsJaa8oqp6lgLFHTCxPfUtmA/3/PaB3ddvHOBeyVOKgbU4+UOMAzRKpeHaFnVt6YSA0Ko0y4B9gdZOtuVTEoPT63PBbEVQjsBNcAdBz8E0Lu3IaJKAKTwbnYL6gm8iPS0EoDbDm5oVgDfjK4WvlI166lPoQWlbk6FG5NiRsVakFqwOC4U4XqfGMXM8ltSs1QRNgRAex/DPpGfX7pQa2I+kBVEaEQauXkmwtGe5Iob0Tog2YiyAlB87lbcEBDhPxWX0V+zPZYf12gFCgAAAABJRU5ErkJggg==" x="0" y="0" width="32" height="32"/>
-                  </svg><h3>Skills :</h3> Web Development, Firebase Authentication, Firestore Database, React + vite + typescript</span>
+                             <span class="project-skills" data-tooltip="Web Development, Firebase Authentication, Firestore Database, React + vite + typescript">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+                        <image xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAspJREFUWEftllmoTmEUhp9DkTKVUBQpbgwR4YqMd2ZCohAlZbowZR4SIVPJhVyZjszcGTKkyFiIJHc6dZBjSCjDek/rr6+///+/b592nZR9uffaa73fu971rq+KRn6qGrk+/wH8kwx0ABYBY4AerqFXwGXgAPAui66yMjAFOAK0KlPkMzAHOJsKIgsAFT8F9cI9D+w1Fh54oYHAUmA88BtQ7LkUEKkARPtrP/kKYGeZ5CuB7cAnoDvwPgYiFcAWYK2ffGIk6UVgLLAZ2JAXgCdGaV9gGHAzknQ4cN3a8RjonxeAL0BLb8HXSFIJVGLUP63zAvDRRNc2EYCKSgMC0SYvAA+dTtF7I5J0BHANeAQMyAvAGmArcAGYEEl6yU1qk8VtzAtAR+C5OV07YBWwo0zi1cA284Q6H8MPeQFQHpnMGaCpUatT7gHue4FB1vdlfnIZ0SRnK1Y/8zpW4tPuhqWS6+SzU4srQaoRKXayTcFuoGtRZY1buIyKaf/j8SVrpQBo4r6vDahHlnwQuAW8ATSi4TPdjajWXxYDkK1rUk6mMrAPWBxUUBu0aAYDsmWJsvCo+HEXrKZmPjDSP14FDrul9zLWZghEjAHRrp7/9MTqr0zmKLDABTnORak6Op08oHdEfc8cWG0lAM29t12AhcAhp22qJ/9l9rzLZ/17UHCax/3w0x7zbzMNsJaa8oqp6lgLFHTCxPfUtmA/3/PaB3ddvHOBeyVOKgbU4+UOMAzRKpeHaFnVt6YSA0Ko0y4B9gdZOtuVTEoPT63PBbEVQjsBNcAdBz8E0Lu3IaJKAKTwbnYL6gm8iPS0EoDbDm5oVgDfjK4WvlI166lPoQWlbk6FG5NiRsVakFqwOC4U4XqfGMXM8ltSs1QRNgRAex/DPpGfX7pQa2I+kBVEaEQauXkmwtGe5Iob0Tog2YiyAlB87lbcEBDhPxWX0V+zPZYf12gFCgAAAABJRU5ErkJggg==" x="0" y="0" width="32" height="32"/>
+                    </svg>
+                </span>
                 
                     </div>
                 <div class="project-img">
@@ -105,15 +108,48 @@
                         <span class="project-time">Dec 2024 - Feb 2025</span><br>
                         <span class="project-desc">Official Site Of Organic By Pooja 
 A Women Salon And Makeup Accessories.</span>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
-                    <image xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAspJREFUWEftllmoTmEUhp9DkTKVUBQpbgwR4YqMd2ZCohAlZbowZR4SIVPJhVyZjszcGTKkyFiIJHc6dZBjSCjDek/rr6+///+/b592nZR9uffaa73fu971rq+KRn6qGrk+/wH8kwx0ABYBY4AerqFXwGXgAPAui66yMjAFOAK0KlPkMzAHOJsKIgsAFT8F9cI9D+w1Fh54oYHAUmA88BtQ7LkUEKkARPtrP/kKYGeZ5CuB7cAnoDvwPgYiFcAWYK2ffGIk6UVgLLAZ2JAXgCdGaV9gGHAzknQ4cN3a8RjonxeAL0BLb8HXSFIJVGLUP63zAvDRRNc2EYCKSgMC0SYvAA+dTtF7I5J0BHANeAQMyAvAGmArcAGYEEl6yU1qk8VtzAtAR+C5OV07YBWwo0zi1cA284Q6H8MPeQFQHpnMGaCpUatT7gHue4FB1vdlfnIZ0SRnK1Y/8zpW4tPuhqWS6+SzU4srQaoRKXayTcFuoGtRZY1buIyKaf/j8SVrpQBo4r6vDahHlnwQuAW8ATSi4TPdjajWXxYDkK1rUk6mMrAPWBxUUBu0aAYDsmWJsvCo+HEXrKZmPjDSP14FDrul9zLWZghEjAHRrp7/9MTqr0zmKLDABTnORak6Op08oHdEfc8cWG0lAM29t12AhcAhp22qJ/9l9rzLZ/17UHCax/3w0x7zbzMNsJaa8oqp6lgLFHTCxPfUtmA/3/PaB3ddvHOBeyVOKgbU4+UOMAzRKpeHaFnVt6YSA0Ko0y4B9gdZOtuVTEoPT63PBbEVQjsBNcAdBz8E0Lu3IaJKAKTwbnYL6gm8iPS0EoDbDm5oVgDfjK4WvlI166lPoQWlbk6FG5NiRsVakFqwOC4U4XqfGMXM8ltSs1QRNgRAex/DPpGfX7pQa2I+kBVEaEQauXkmwtGe5Iob0Tog2YiyAlB87lbcEBDhPxWX0V+zPZYf12gFCgAAAABJRU5ErkJggg==" x="0" y="0" width="32" height="32"/>
-                  </svg><h3>Skills :</h3>Firebase Authentication, Firestore Database, APIs</span>
+<span class="project-skills" data-tooltip="Firebase Authentication, Firestore Database, APIs">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+        <image xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAspJREFUWEftllmoTmEUhp9DkTKVUBQpbgwR4YqMd2ZCohAlZbowZR4SIVPJhVyZjszcGTKkyFiIJHc6dZBjSCjDek/rr6+///+/b592nZR9uffaa73fu971rq+KRn6qGrk+/wH8kwx0ABYBY4AerqFXwGXgAPAui66yMjAFOAK0KlPkMzAHOJsKIgsAFT8F9cI9D+w1Fh54oYHAUmA88BtQ7LkUEKkARPtrP/kKYGeZ5CuB7cAnoDvwPgYiFcAWYK2ffGIk6UVgLLAZ2JAXgCdGaV9gGHAzknQ4cN3a8RjonxeAL0BLb8HXSFIJVGLUP63zAvDRRNc2EYCKSgMC0SYvAA+dTtF7I5J0BHANeAQMyAvAGmArcAGYEEl6yU1qk8VtzAtAR+C5OV07YBWwo0zi1cA284Q6H8MPeQFQHpnMGaCpUatT7gHue4FB1vdlfnIZ0SRnK1Y/8zpW4tPuhqWS6+SzU4srQaoRKXayTcFuoGtRZY1buIyKaf/j8SVrpQBo4r6vDahHlnwQuAW8ATSi4TPdjajWXxYDkK1rUk6mMrAPWBxUUBu0aAYDsmWJsvCo+HEXrKZmPjDSP14FDrul9zLWZghEjAHRrp7/9MTqr0zmKLDABTnORak6Op08oHdEfc8cWG0lAM29t12AhcAhp22qJ/9l9rzLZ/17UHCax/3w0x7zbzMNsJaa8oqp6lgLFHTCxPfUtmA/3/PaB3ddvHOBeyVOKgbU4+UOMAzRKpeHaFnVt6YSA0Ko0y4B9gdZOtuVTEoPT63PBbEVQjsBNcAdBz8E0Lu3IaJKAKTwbnYL6gm8iPS0EoDbDm5oVgDfjK4WvlI166lPoQWlbk6FG5NiRsVakFqwOC4U4XqfGMXM8ltSs1QRNgRAex/DPpGfX7pQa2I+kBVEaEQauXkmwtGe5Iob0Tog2YiyAlB87lbcEBDhPxWX0V+zPZYf12gFCgAAAABJRU5ErkJggg==" x="0" y="0" width="32" height="32"/>
+    </svg>
+</span>
                 </div>
                 <div class="project-img">
                     <a href="https://www.organicbypooja.in/"><img id="project1img" src="./public/images/organicByPooja.png">
                 </a>
             </div></div>
-            </div></div>
+            </div>
+            <div class="scroll-down" onclick="document.getElementById('education').scrollIntoView({behavior: 'smooth'});">
+                <span>&#8595;</span>
+            </div></section>
+            <section class="contact-section slides" id="contact">
+                <div class="contact-content">
+                    <h2>Connect With Me</h2>
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="db91e7b4-ebbe-468e-921a-8808e9af8868">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" placeholder="Your Message" required></textarea>
+                        <input type="hidden" name="redirect" value="https://web3forms.com/success">
+                        <button type="submit">Submit Form</button>
+                    </form>
+
+                    <div class="or-divider">or</div>
+
+                    <div class="social-media">
+                        <a href="https://www.linkedin.com/in/yourprofile" target="_blank">
+                            <img src="./public/images/linkedin.png" alt="LinkedIn" class="social-icon">
+                        </a>
+                        <a href="https://github.com/yourprofile" target="_blank">
+                            <img src="./public/images/github.png" alt="GitHub" class="social-icon">
+                        </a>
+                        <a href="https://wa.me/918219440142" target="_blank">
+                            <img src="./public/images/whatsapp.png" alt="Whatsapp" class="social-icon">
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
         <script src="script.js"></script>
     </body>
 </html> 
